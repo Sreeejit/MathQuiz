@@ -2,8 +2,13 @@
 
 function addUser(){
     localStorage.setItem("User1", document.getElementById("1login").value);
+    if(localStorage.getItem("User1").length<=0){
+     window.alert("Please Enter A Username")
+    }
+    else{
     window.alert("You have successfully signed up to play \"Math Quiz\", you will be redirected to the level page now")
     window.location = "level.html"
+    }
     }
     
 
