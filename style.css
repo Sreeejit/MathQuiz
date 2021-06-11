@@ -61,3 +61,37 @@ padding: 10px;
 float: none;
 text-align: left;
 }
+
+#ezBTN
+{
+width : 30%;
+background-color: #04AA6D;
+}
+#mdBTN
+{
+width : 30%;
+background-color: orange;	
+}
+
+#hdBTN
+{
+width:30%;
+background-color: red;
+}
+
+#ChooseH2
+{
+font-family: 'Times New Roman', Times, serif;	
+}
+
+#submit_button
+{
+width: 30%;
+background-color: royalblue;
+}
+
+#send_button
+{
+width: 30%;
+background-color:green;	
+}

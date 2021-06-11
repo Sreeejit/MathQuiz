@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Math Quiz</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href = "style.css" rel = "stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="game.css">
+</head>
+<body onload="getPlayer()">
+	<div class = 'topnav'>
+		<a class="active" href="index.html">Math Quiz</a>
+		<a class = "active" href = "about.html">About</a>
+	</div>
+    <br>
+
+<div class="container">
+	<center>
+		<h2 style="color: green;">Math Quiz!</h2>
+        <br>
+        <h3 id = "welcomeHeading"></h3>
+        <h4 id = "player_score"></h3>
+        <div id = "output" class = "col-lg-6 col-md-8 col-sm-10 col-xs-12"></div>
+		<br>
+		<br>
+		<label id = "questionLABEL" class = "form-control"></label>
+		<br>
+		<br>
+		<button id = "send_button" onclick = "generate()" class = "btn btn-success" style="width: 30%;">Generate Question</button>
+		<br>
+		<br>
+		<input type = "text"  id = "answerINPUT" class = "form-control" placeholder="Your Answer">
+		<br>
+		<br>
+		<button id = "submit_button" onclick = "submit()" class = "btn btn-success" style="width: 30%;">Submit Answer</button>
+
+
+	</center>
+</div>
+
+<script src="Script.js"></script>
+</body>
+</html>
+
