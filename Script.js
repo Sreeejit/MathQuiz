@@ -74,6 +74,7 @@ function GenerateHD(){
     Compute_Answer(a,b,choose_operator[random_op])
     document.getElementById("answerINPUT").innerHTML = "";
 }
+
 score = 0;
 function Submit(){
 var user_answer = document.getElementById("answerINPUT").value;
@@ -89,7 +90,7 @@ window.alert("You got it wrong, better luck next time")
 document.getElementById("player_score").innerHTML = "Score : " + score;
 
 }
-
+document.getElementById("answerINPUT").value = "";
 }
 
 function Compute_Answer(x, y, op){
